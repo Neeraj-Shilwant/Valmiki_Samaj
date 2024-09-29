@@ -1,0 +1,37 @@
+{
+  "name": "kasarfam",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@nextui-org/react": "^2.0.24",
+    "autoprefixer": "10.4.15",
+    "date-fns": "^2.30.0",
+    "eslint": "8.47.0",
+    "eslint-config-next": "13.4.19",
+    "framer-motion": "^10.16.0",
+    "fs-extra": "^11.1.1",
+    "google-auth-library": "^8.9.0",
+    "google-spreadsheet": "^4.0.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.0",
+    "next": "^14.0.4",
+    "nodemailer": "^6.9.14",
+    "postcss": "8.4.28",
+    "react": "^18.2.0",
+    "react-datepicker": "^4.16.0",
+    "react-dom": "^18.2.0",
+    "react-spinners": "^0.13.8",
+    "survey-react-ui": "^1.9.104",
+    "tailwindcss": "3.3.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

@@ -30,12 +30,13 @@ export default function Footer() {
     
                 
                 <p>
-                    <strong> More Information</strong><br/>
-                    <strong>Phone:</strong> +91 866 822 0656<br/>
-                    <strong>Email:</strong> support@itimpactdeal.com<br/>
+                    <strong> संकल्पना : </strong>
+                    <strong>मा श्री धनराज बिरदा 
+                    महामंत्री, अनुसूचित मोर्चा भाजपा.महाराष्ट्र</strong>
+                   
                 </p>
  
-    <p>&copy;2023 IT-IMPACT | All Rights Reserved</p>
+    <p>&copy;2023 IT-IMPACT UNIQUE GATEWAY pvt. ltd. | All Rights Reserved</p>
   </footer>
   
 

@@ -48,7 +48,7 @@ export default function Home() {
     
     // Config variables
     const SPREADSHEET_ID = process.env.NEXT_PUBLIC_SPREADSHEET_ID;
-    const SHEET_ID = process.env.NEXT_PUBLIC_SHEET_ID;
+    const SHEET_ID = process.env.NEXT_PUBLIC_SHEET_ID1;
     const GOOGLE_CLIENT_EMAIL = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_EMAIL;
     const GOOGLE_SERVICE_PRIVATE_KEY = process.env.GOOGLE_SERVICE_PRIVATE_KEY;
     const SCOPES = [
@@ -86,7 +86,7 @@ export default function Home() {
         setloading(true);
         if (
             email !== '' &&
-            // emailstatus !== false &&
+            emailstatus !== false &&
             // setMailerror === '' &&
             form.fullname !== '' &&
             form.education !== '' &&
@@ -254,26 +254,26 @@ export default function Home() {
             //Mongo connection
 
             //send post request with data
-            // const res = await fetch("api/route", {
-            //     method: "POST",
-            //     headers: {
-            //         "Content-type": "application/json",
-            //     },
-            //     body: JSON.stringify({ newRow }),
-            // });
+            const res = await fetch("api/route", {
+                method: "POST",
+                headers: {
+                    "Content-type": "application/json",
+                },
+                body: JSON.stringify({ newRow }),
+            });
             setTimeout(() => {
                 setSuccessMessage('Form submitted successfully!'); // Hide the loader
                 setloading(false);
-            }, 2000);
+            }, 5000);
             
             //Send data to hello api for email response sending
-            // const emailresponse = await fetch("api/hello",{
-            //     method:"POST",
-            //     headers:{
-            //         "Content-type": "application/json",
-            //     },
-            //     body:JSON.stringify({Name:form.fullname,Email: email,Mobilenumber: formmob.mobile}),
-            // });
+            const emailresponse = await fetch("api/hello",{
+                method:"POST",
+                headers:{
+                    "Content-type": "application/json",
+                },
+                body:JSON.stringify({Name:form.fullname,Email: email,Mobilenumber: formmob.mobile}),
+            });
 
             
             // Perform your form submission logic here
@@ -542,7 +542,7 @@ export default function Home() {
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-            <title>Valmiki Samaj</title>
+            <title>KASAR FAMILY</title>
 
         </Head>
         {refresh ? (<div className='justify-center' style={{

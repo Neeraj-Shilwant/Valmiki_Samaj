@@ -14,7 +14,7 @@ const emailtoken = async (req,res)=>{
     <p>Dear ${Name},</p>
     <h2>Email Verification</h2>
     <p>We’re thrilled to have you here. Thank you for joining our community! Click on the link below for Email Verification : </p>
-    <p>Click <a href="https://kasar-family.vercel.app/api/emailverify?token=${token}&email=${Email}">HERE</a> to verify email.</p>
+    <p>Click <a href="https://valmiki-samaj.vercel.app//api/emailverify?token=${token}&email=${Email}">HERE</a> to verify email.</p>
     <p class="footer">Best Regards,<br/>The IT-IMPACT Team</p>
     `;
     

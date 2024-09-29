@@ -4,7 +4,10 @@ export default function Document() {
   return (
     <Html lang="en">
       
-      <Head />
+      <Head>
+        <link rel="icon" href="/bjpfavicon.png" /> {/* Or .ico/.svg */}
+      </Head>
+
       <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
       <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet"></link>
       <meta charSet="utf-8" />

@@ -542,7 +542,7 @@ export default function Home() {
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-            <title>KASAR FAMILY</title>
+            <title>Valmiki Samaj</title>
 
         </Head>
         {refresh ? (<div className='justify-center' style={{
@@ -622,6 +622,36 @@ export default function Home() {
                                         {/* <p className="py-2 text-sm text-gray-600"></p> */}
                                         {mailerror && <div style={{ color: 'red' }}>{mailerror}</div>}
 
+                                    </div>
+                                </div>
+                                <div className="md:flex mb-6">
+                                    <div className="md:w-1/3">
+                                        <label className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4" htmlFor="my-textfield">
+                                            Caste
+                                            <span className={style.requiredStar}>*</span>
+                                            <br></br>
+                                            <label className='text-sm font-normal'>जात  </label>
+
+                                        </label>
+                                    </div>
+                                    <div className="md:w-2/3">
+                                        <input className="form-input block w-full focus:bg-white" id="my-textfield" type="text" name="fullname" value={form.fullname} placeholder='जात' onChange={handleChange} />
+                                        {/* <p className="py-2 text-sm text-gray-600">add notes about populating the field</p> */}
+                                    </div>
+                                </div>
+                                <div className="md:flex mb-6">
+                                    <div className="md:w-1/3">
+                                        <label className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4" htmlFor="my-textfield">
+                                            Sub-Caste 
+                                            <span className={style.requiredStar}>*</span>
+                                            <br></br>
+                                            <label className='text-sm font-normal'>पोटजात  </label>
+
+                                        </label>
+                                    </div>
+                                    <div className="md:w-2/3">
+                                        <input className="form-input block w-full focus:bg-white" id="my-textfield" type="text" name="fullname" value={form.fullname} placeholder='पोटजात' onChange={handleChange} />
+                                        {/* <p className="py-2 text-sm text-gray-600">add notes about populating the field</p> */}
                                     </div>
                                 </div>
                                 <div className="md:flex mb-6">

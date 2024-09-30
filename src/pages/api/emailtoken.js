@@ -15,14 +15,14 @@ const emailtoken = async (req,res)=>{
     <h2>Email Verification</h2>
     <p>We’re thrilled to have you here. Thank you for joining our community! Click on the link below for Email Verification : </p>
     <p>Click <a href="https://valmiki-samaj.vercel.app//api/emailverify?token=${token}&email=${Email}">HERE</a> to verify email.</p>
-    <p class="footer">Best Regards,<br/>The IT-IMPACT Team</p>
+    <p class="footer">Best Regards,<br/>The Valmiki Samaj Team</p>
     `;
     
     try {
         await transporter.sendMail({
           ...mailOptions,
           to:Email,
-          subject:"Welcome to the KASAR Family! Email verification",
+          subject:"Welcome to the Valmiki Samaj Family! Email verification",
           html: htmlContent
         
         });

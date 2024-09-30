@@ -10,13 +10,13 @@ const handler = async (req, res) =>{
     <p>Dear ${Name},</p>
     <p>We’re thrilled to have you here. Thank you for joining our community! We believe in creating a space where everyone can share, learn, and grow together.</p>
     <p>If you ever have any questions, don’t hesitate to reach out. We’re here to help you make the most of your experience.</p>
-    <p class="footer">Best Regards ,<br/>The IT-IMPACT Team</p>
+    <p class="footer">Best Regards ,<br/>The Valmiki Samaj Team</p>
 `;
     try {
       await transporter.sendMail({
         ...mailOptions,
         to:Email,
-        subject:"Welcome to the KASAR Family! Let's Grow Together",
+        subject:"Welcome to the Valmiki Samaj Family! Let's Grow Together",
         html: htmlContent
       
       });
